@@ -1,0 +1,96 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'Sacramento', cursive; */
+}
+
+:root{
+    /* *--main-color: #2e3061; */ 
+    --main-color: #2E3061;
+    --second-color: #FEE9CE;
+    --thirt-color: #555184;
+    --background-color: #28293D;
+    --contraste-color: #FECA7E;
+}
+
+.stars {
+    position: fixed;
+    top: o;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--background-color);
+}
+
+.star {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background-color: var(--contraste-color);
+    animation: twinkling 5s linear infinite;
+}
+
+.card {
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 2rem;
+    background-color: var(--main-color);
+    border-radius: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    color: var(--second-color);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@keyframes twinkling {
+    0%{
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+.containerfirstPage {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    height: 600px;
+    margin: 0 auto;
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  img {
+    width: 500px;
+    height: 500px;
+    border-radius: 50px;
+  }
+
+  .textIntroduceMe h1{
+    color: var(--second-color);
+    font-size: 120px;
+    font-family: 'Sacramento', cursive;
+
+    margin: 0;
+  }
+
+  .textIntroduceMe p{
+    color: var(--second-color);
+    font-size: 44px;
+    font-family: 'Sacramento', cursive;
+
+    margin: 0  20px;
+  }
+  
+  
