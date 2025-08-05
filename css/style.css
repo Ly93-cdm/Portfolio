@@ -32,6 +32,97 @@
     animation: twinkling 5s linear infinite;
 }
 
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--thirt-color);
+    padding: 1rem 2rem;
+    z-index: 10;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4); 
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.container .nav {
+  
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.naver {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.navbar a {
+    position: relative;
+    color: var(--second-color);
+    text-decoration: none;
+    margin-left: 2rem;
+    font-size: 2rem;
+    transition: color 0.3s ease ;
+}
+
+.navbar a::after {
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: var(--contraste-color);
+    transition: width 0.3s ease;
+}
+
+.navbar a:hover::after {
+    width: 100%;
+}
+
+.navbar a:hover {
+    color: var(--contraste-color);
+}  
+
+.menu-icon {
+    display: none;
+    font-size: 2.5rem;
+    color: var(--second-color);
+    cursor: pointer;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .menu-icon{
+        display: block;
+    }
+    
+    .navbar {
+        position: fixed;
+        left: 0;
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        background-color: var(--thirt-color);
+    }
+
+    #menu-toggle:checked ~ .navbar {
+        display: flex;
+    }
+
+    .navbar a {
+        padding: 0.5rem 1rem;
+        
+    }
+}
+
 .card {
     position: relative;
     z-index: 1;
