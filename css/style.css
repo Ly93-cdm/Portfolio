@@ -15,13 +15,14 @@
     --contraste-color: #FECA7E;
 }
 
+/* animação do background */
 .stars {
     position: fixed;
     top: o;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: var(--background-color);
+    background-color: var(--main-color);
 }
 
 .star {
@@ -32,12 +33,25 @@
     animation: twinkling 5s linear infinite;
 }
 
+@keyframes twinkling {
+    0%{
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+/* Header fixo com a navegação  */
 header {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    background-color: var(--thirt-color);
+    background-color: var(--main-color);
     padding: 1rem 2rem;
     z-index: 10;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4); 
@@ -55,6 +69,7 @@ header {
     padding: 0 2rem;
 }
 
+/* Navegação padrão (desktop) */
 .naver {
     display: flex;
     gap: 1.5rem;
@@ -88,6 +103,7 @@ header {
     color: var(--contraste-color);
 }  
 
+/* Ícone do menu mobile */
 .menu-icon {
     display: none;
     font-size: 2.5rem;
@@ -99,6 +115,7 @@ header {
     display: none;
 }
 
+/* Navegação responsiva (mobile) */
 @media (max-width: 768px) {
     .menu-icon{
         display: block;
@@ -123,10 +140,11 @@ header {
     }
 }
 
+/* Área principal do conteúdo central com visual de caartão para destacer o conteúdo principal da pagína */
 .card {
     position: relative;
     z-index: 1;
-    max-width: 800px;
+    max-width: 1000px;
     margin: 40px auto;
     padding: 2rem;
     background-color: var(--main-color);
@@ -139,49 +157,102 @@ header {
     align-items: center;
 }
 
-@keyframes twinkling {
-    0%{
-        opacity: 0;
-    }
-    50% {
-        opacity: 1;
-    }
-    100%{
-        opacity: 0;
-    }
-}
-.containerfirstPage {
-    position: relative;
-    z-index: 2;
-    width: 100%;
-    height: 600px;
-    margin: 0 auto;
-    
+/* Home - destaque inicial com imagem e texto */
+.home {
     display: flex;
-    justify-content: space-around;
     align-items: center;
-  }
-  
-  img {
-    width: 500px;
-    height: 500px;
-    border-radius: 50px;
-  }
+    width: 100%;
+    background: linear-gradient(to right, var(--main-color), var(--thirt-color));
+    padding: 5rem 2rem;
+    height: 80vh;
+}
 
-  .textIntroduceMe h1{
+.home-grid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+
+.home-img {
+    flex: 1;
+    text-align: center;
+    animation: float 3s ease-in-out infinite;
+}
+
+.profile-img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 4.9px solid var(--contraste-color);
+    box-shadow: 0 0 25px rgba(238, 255, 0, 0.651);
+    object-fit: cover;
+}
+
+.home-text {
+    flex: 2;
+    max-width: 500px;
     color: var(--second-color);
-    font-size: 120px;
-    font-family: 'Sacramento', cursive;
+}
 
-    margin: 0;
-  }
+.home-text h2 {
+    font-family: "Bitcount", system-ui;
+    font-weight: 500;
+    font-size: 3rem;
+    color: var(--contraste-color);
+}
 
-  .textIntroduceMe p{
+.home-text p {
+    margin: 1rem 0 2rem;
+    
+}
+
+/* Home responsivo */
+@media (max-width: 768px) {
+    .home-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .home-text h2,
+    .home-text p {
+        text-align: center;
+    }
+
+    .home-text {
+        align-items: center;
+    }
+    
+}
+
+/* Seçoes gerais */
+.section {
+    padding: 3rem 2rem;
+    background-color: var(--main-color);
+}
+
+.section-title {
+    margin-bottom: 1rem;
+    color: var(--contraste-color);
+}
+
+.section-text {
+    font-size: 1.05rem;
+    line-height: 1.8;
     color: var(--second-color);
-    font-size: 44px;
-    font-family: 'Sacramento', cursive;
+    margin-bottom: 1.2rem;
+}
 
-    margin: 0  20px;
-  }
-  
-  
+/* Grid de skills (card) */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+    justify-items: center;
+}
+
+.skill-card {
+   
+}
