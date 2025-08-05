@@ -4,36 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
-<<<<<<< HEAD
-    <link rel="stylesheet" href="style.css">
-    <title>Portfolio</title>
-</head>
-<body>
-  <header>
-        <nav>
-            <a href="">Home</a>
-            <a href="">Services</a>
-            <a href="">Skills</a>
-            <a href="">Contact</a>
-        </nav>
-    </header>
-    <main>
-        <article class="Home">
-            <h2>Home</h2>
-        </article>
-        <article class="Services">
-            <h2>Services</h2>
-        </article>
-        <article class="Skills">
-            <h2>Skills</h2>
-        </article>
-        <article class="Contact">
-            <h2>Contact</h2>
-        </article>
-    </main>
-    <div class="stars"></div>
-      <script src="script.js"></script>
-=======
     <link rel="stylesheet" href="./css/style.css">
     <title>Portfolio</title>
 </head>
@@ -42,31 +12,95 @@
     <div class="stars"></div>
     <header>
             <nav>
-                <a href="">Home</a>
-                <a href="">Services</a>
+                <a href="">Sobre me</a>
                 <a href="">Skills</a>
-                <a href="">Contact</a>
+                <a href="">Projetos</a>
+                <a href="">Contato</a>
             </nav>
         </header>
         <main class="card">
-            <article class="Home">
-                <h2>Home</h2>
+            <section class="home">
+                <div class="container home-grid">
+                    <div class="home-img">
+                        <img src="" alt="" class="profile-img">
+                    </div>
+                    <div class="home-text">
+                        <h2>
+                            <span class="type-text">Hello World!</span>
+                        </h2>
+                        <p>Meu nome é <span class="name">Seu Nome</span>, sou um desenvolvedor web apaixonado por criar experiências digitais incríveis.</p>
+                    </div>
+                </div>
                 <!-- sobre min -->
-            </article>
-            <article class="fomation"> 
-                <h2>Fomation</h2> 
-                <!-- adicionar espacos para colocar projetos  -->
-            </article>
-            <article class="Skills"> 
-                <h2>Skills</h2> 
-                <!-- adicionar as tecnologias que sei inspiraçao na foto:  -->
-                <!-- tbm adicionar as idiomas que sei -->
-            </article>
-            <article class="Contact">
-                <h2>Contact</h2>
-            </article>
+            </section>
+
+            <section class="about"> 
+                <div class="container about-text">
+                    <h2 class="title-text">Sobre mim</h2>
+                    <p class="section-text">Sou um desenvolvedor web com experiência em HTML, CSS e JavaScript. Adoro aprender novas tecnologias e estou sempre em busca de desafios que me permitam crescer profissionalmente.</p>
+                    <p class="section-text">Sou um desenvolvedor web com experiência em HTML, CSS e JavaScript. Adoro aprender novas tecnologias e estou sempre em busca de desafios que me permitam crescer profissionalmente.</p>
+                    <p class="section-text">Sou um desenvolvedor web com experiência em HTML, CSS e JavaScript. Adoro aprender novas tecnologias e estou sempre em busca de desafios que me permitam crescer profissionalmente.</p>
+                </div>
+            </section>
+
+            <section class="Skills">
+                <div class="container">
+                    <h2>Skills</h2>
+                    <div class="Skills-grid">
+                        <div class="skill-card">
+                            <i></i>  <!-- link para o icone  -->
+                            <span></span> <!-- nome da tecnologia  -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="projects">
+                <div class="container">
+                    <h2>Projetos</h2>
+                    <div class="projects-grid">
+                        <div class="project-card">
+                            <img src="" alt="">
+                            <h3></h3> <!-- nome do projeto -->
+                            <p></p> <!-- mini texto sobre o que é e como foi feito  -->
+                            <div class="btn">
+                                <a href="#" class="btn-link">Ver Projeto</a>
+                                <a href="#" class="btn-link">Ver Código</a>
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <img src="" alt="">
+                            <h3></h3> <!-- nome do projeto -->
+                            <p></p> <!-- mini texto sobre o que é e como foi feito  -->
+                            <div class="btn">
+                                <a href="#" class="btn-link">Ver Projeto</a>
+                                <a href="#" class="btn-link">Ver Código</a>
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <img src="" alt="">
+                            <h3></h3> <!-- nome do projeto -->
+                            <p></p> <!-- mini texto sobre o que é e como foi feito  -->
+                            <div class="btn">
+                                <a href="#" class="btn-link">Ver Projeto</a>
+                                <a href="#" class="btn-link">Ver Código</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="contact">
+                <div class="contact contact-card">
+                    <h2>Contatos</h2>
+                    <div class="social-link">
+                        <a href="" class="btn-social"><i>icone da rede social</i> " nome da Rede social " </a>
+                        <a href="" class="btn-social"><i>icone da rede social</i> " nome da Rede social " </a>
+                    </div>
+                </div>
+            </section>
         </main>
-        <script src="/Portifolio-main/js/script.js"></script>
->>>>>>> e01e055 (att in portifolio)
+        <script src="./js/script.js"></script>
 </body>
 </html>
