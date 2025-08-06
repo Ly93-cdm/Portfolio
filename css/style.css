@@ -3,11 +3,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* font-family: 'Sacramento', cursive; */
 }
 
 :root{
-    /* *--main-color: #2e3061; */ 
     --main-color: #2E3061;
     --second-color: #FEE9CE;
     --thirt-color: #555184;
@@ -157,6 +155,12 @@ header {
     align-items: center;
 }
 
+.section {
+    width: 100%;
+    padding: 3rem 2rem;
+    background-color: var(--main-color);
+}
+
 /* Home - destaque inicial com imagem e texto */
 .home {
     display: flex;
@@ -227,9 +231,12 @@ header {
 }
 
 /* Seçoes gerais */
-.section {
-    padding: 3rem 2rem;
-    background-color: var(--main-color);
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    color: var(--contraste-color);
 }
 
 .section-title {
@@ -244,6 +251,13 @@ header {
     margin-bottom: 1.2rem;
 }
 
+.skills-note {
+    font-size: 1rem;
+    color: var(--second-color);
+    margin-top: 0.5rem;
+    text-align: center;
+}
+
 /* Grid de skills (card) */
 .skills-grid {
     display: grid;
@@ -254,5 +268,155 @@ header {
 }
 
 .skill-card {
-   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    text-align: center;
+    padding: 1rem;
+    box-shadow: var(--main-color) 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
 }
+
+.skill-card:hover {
+    transform: translateY(-5px);
+}   
+
+.skill-card i {
+    font-size: 40px;
+}
+
+.skill-card span {
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: var(--contraste-color);
+}
+
+/* Botão base gerérico*/
+.btn {
+    display: inline-block;
+    margin: 1rem;
+    background-color: var(--main-color);  
+    color: var(--second-color);
+    padding: 0.5rem 1.5rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: var(--contraste-color);
+    color: var(--background-color);
+}
+
+/* Seção de projetos */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.project-card {
+    background-color: var(--thirt-color);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.project-card h3 {
+    margin: 1rem;
+    color: var(--contraste-color);
+}
+
+.project-card p {
+    margin: 0 1rem 1rem;
+    font-size: 0.95rem;
+    color: var(--second-color);
+}
+
+.project-card .btns {
+    display: flex;
+    gap: 1rem;
+    margin: 1rem;
+    flex-wrap: wrap;
+}
+
+.project-card .btns a {
+    background-color: var(--main-color);
+    color: var(--second-color);
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.project-card .btns a:hover {
+    background-color: var(--contraste-color);
+    color: var(--main-color);
+}
+
+.contact-card {
+    background: linear-gradient(to right, var(--main-color), var(--thirt-color));
+    border: 2px solid var();
+    border-radius: 12px;
+    padding: 3rem 2rem;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.contact-card h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.contact-card p {
+    font-size: 1.1rem;
+    color: var(--second-color);
+    margin-bottom: 2rem;
+}
+
+.btn-social {
+    background-color: var(--thirt-color);
+    color: var(--second-color);
+    padding: 0.75rem 1.5rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    display: flex;
+    gap: 0.5rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-social:hover {
+    background-color: var(--contraste-color);
+    color: var(--main-color);
+}
+
+.social-link {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.btn-social {
+    font-size: 1.1rem;
+}
+

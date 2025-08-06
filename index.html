@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio - Ly</title>
-    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
@@ -25,10 +25,10 @@
             <label for="menu-toggle" class="menu-icon">&#9776;</label>
 
             <nav class="navbar">
-                <a href="">Sobre me</a>
-                <a href="">Skills</a>
-                <a href="">Projetos</a>
-                <a href="">Contato</a>
+                <a href="#about">Sobre me</a>
+                <a href="#skills">Skills</a>
+                <a href="#project">Projetos</a>
+                <a href="#contact">Contato</a>
             </nav>
         </div>
     </header>
@@ -36,7 +36,7 @@
         <section class="home">
             <div class="container home-grid">
                 <div class="home-img">
-                    <img src="./img/1686751593185.png" alt="" class="profile-img">
+                    <img src="./img/profile-img.jpg" alt="profile picture" class="profile-img">
                 </div>
                 <div class="home-text">
                     <h2>
@@ -48,72 +48,97 @@
             <!-- sobre min -->
         </section>
 
-        <section class="about"> 
+        <section id="about" class="section about"> 
             <div class="container about-text">
                 <h2 class="section-title">Sobre mim</h2>
-                <p class="section-text">Sou um desenvolvedor web com experiência em HTML, CSS e JavaScript. Adoro aprender novas tecnologias e estou sempre em busca de desafios que me permitam crescer profissionalmente.</p>
-                <p class="section-text">Sou um desenvolvedor web com experiência em HTML, CSS e JavaScript. Adoro aprender novas tecnologias e estou sempre em busca de desafios que me permitam crescer profissionalmente.</p>
-                <p class="section-text">Sou um desenvolvedor web com experiência em HTML, CSS e JavaScript. Adoro aprender novas tecnologias e estou sempre em busca de desafios que me permitam crescer profissionalmente.</p>
+                <p class="section-text">Sou formada em Análise e Desenvolvimento de Sistemas, curso no qual desenvolvi conhecimentos em lógica de programação, banco de dados, modelagem de sistemas e desenvolvimento Back-End.</p>
+                <p class="section-text">Atuei principalmente com linguagens voltadas ao lado do servidor, o que me proporcionou uma base sólida na área de tecnologia.</p>
+                <p class="section-text">Atualmente, estou direcionando meus estudos para o desenvolvimento Front-End, com foco em HTML, CSS e JavaScript, buscando minha primeira oportunidade profissional na área.</p>
             </div>
         </section>
 
-        <section class="Skills">
+        <section id="skills" class="section skills">
             <div class="container">
                 <h2>Skills</h2>
-                <div class="Skills-grid">
+                <p class="skills-note">
+                    Atualmente focada no desenvolvimento Front-End, mas com conhecimentos complementares em outras tecnologias.
+                </p>
+                <div class="skills-grid">
                     <div class="skill-card">
-                        <i class="devicon-html5-plain colored"></i>  
+                        <i class="devicon-html5-plain colored" style="color: var(--contraste-color);"></i>  
                         <span>HTML</span> 
                     </div>
                     <div class="skill-card">
-                        <i class="devicon-css3-plain colored"></i>
+                        <i class="devicon-css3-plain colored" style="color: var(--contraste-color);"></i>
                         <span>CSS3</span>
                     </div>
                     <div class="skill-card">
-                        <i class="devicon-javascript-plain colored"></i>
+                        <i class="devicon-javascript-plain colored" style="color: var(--contraste-color);"></i>
                         <span>JavaScript</span>
                     </div>
                     <div class="skill-card">
-                        <i class="devicon-git-plain colored"></i>
+                        <i class="devicon-git-plain colored" style="color: var(--contraste-color);"></i>
                         <span>Git</span>
                     </div>
                     <div class="skill-card">
-                        <i class="devicon-github-original"></i>
+                        <i class="devicon-github-original" style="color: var(--contraste-color);"></i>
                         <span>GitHub</span>
                     </div>
                 </div>
+                <h3>Outros conhecimentos</h3>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <i class="devicon-java-plain colored" style="color: var(--contraste-color);"></i>
+                        <span>Java</span>
+                    </div>
+                    <div class="skill-card">
+                        <i class="devicon-spring-plain colored" style="color: var(--contraste-color);"></i>
+                        <span>Spring Boot</span>
+                    </div>
+                    <div class="skill-card">
+                        <i class="devicon-python-plain colored" style="color: var(--contraste-color);"></i>
+                        <span>Python</span>
+                    </div>
+                    <div class="skill-card">
+                        <i class="devicon-mysql-plain colored" style="color: var(--contraste-color);"></i>
+                        <span>MySQL</span>
+                    </div>
+                    <div class="skill-card">
+                        <i class="devicon-postgresql-plain colored" style="color: var(--contraste-color);"></i>
+                        <span>PostgreSQL</span>
+                    </div>
             </div>
         </section>
 
-        <section class="projects">
+        <section id="project" class="section projects">
             <div class="container">
                 <h2>Projetos</h2>
                 <div class="projects-grid">
                     <div class="project-card">
-                        <img src="" alt="">
-                        <h3></h3> <!-- nome do projeto -->
-                        <p></p> <!-- mini texto sobre o que é e como foi feito  -->
-                        <div class="btn">
-                            <a href="#" class="btn-link">Ver Projeto</a>
-                            <a href="#" class="btn-link">Ver Código</a>
+                        <img src="./img/project-img.jpg" alt="image of the project">
+                        <h3>Projeto 1</h3> <!-- nome do projeto -->
+                        <p>é sobre algo feito com algo para algo</p> <!-- mini texto sobre o que é e como foi feito  -->
+                        <div class="btns">
+                            <a href="#">Ver Projeto</a>
+                            <a href="#">Ver Código</a>
                         </div>
                     </div>
                     <div class="project-card">
-                        <img src="" alt="">
-                        <h3></h3> <!-- nome do projeto -->
-                        <p></p> <!-- mini texto sobre o que é e como foi feito  -->
-                        <div class="btn">
-                            <a href="#" class="btn-link">Ver Projeto</a>
-                            <a href="#" class="btn-link">Ver Código</a>
+                        <img src="./img/project-img.jpg" alt="image of the project">
+                        <h3>Projeto 2</h3> <!-- nome do projeto -->
+                        <p>é sobre algo feito com algo para algo</p> <!-- mini texto sobre o que é e como foi feito  -->
+                        <div class="btns">
+                            <a href="#">Ver Projeto</a>
+                            <a href="#">Ver Código</a>
                         </div>
                     </div>
                     <div class="project-card">
-                        <img src="" alt="">
-                        <h3></h3> <!-- nome do projeto -->
-                        <p></p> <!-- mini texto sobre o que é e como foi feito  -->
-                        <div class="btn">
-                            <a href="#" class="btn-link">Ver Projeto</a>
-                            <a href="#" class="btn-link">Ver Código</a>
+                        <img src="./img/project-img.jpg" alt="image of the project">
+                        <h3>Projeto 3</h3> <!-- nome do projeto -->
+                        <p>é sobre algo feito com algo para algo</p> <!-- mini texto sobre o que é e como foi feito  -->
+                        <div class="btns">
+                            <a href="#">Ver Projeto</a>
+                            <a href="#">Ver Código</a>
                         </div>
                     </div>
                 </div>
@@ -121,12 +146,20 @@
             </div>
         </section>
 
-        <section class="contact">
-            <div class="contact contact-card">
+        <section id="contact" class="section contact">
+            <div class="container contact-card">
                 <h2>Contatos</h2>
+                <p>Sinta-se à vontade para me chamar em alguma das redes abaixo 😊</p>
                 <div class="social-link">
-                    <a href="" class="btn-social"><i>icone da rede social</i> " nome da Rede social " </a>
-                    <a href="" class="btn-social"><i>icone da rede social</i> " nome da Rede social " </a>
+                    <a href="" class="btn-social">
+                        <i class="fab fa-linkedin"></i> Linkedin 
+                    </a>
+                    <a href="" class="btn-social">
+                        <i class="fab fa-github"></i> GitHub 
+                    </a>
+                    <a href="" class="btn-social">
+                        <i class="fab fa-instagram"></i> Instagram 
+                    </a>
                 </div>
             </div>
         </section>
