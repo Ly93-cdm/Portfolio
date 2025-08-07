@@ -420,3 +420,23 @@ header {
     font-size: 1.1rem;
 }
 
+/* Footer */
+
+footer {
+    text-align: center;
+    padding: 2rem 1rem;
+    font-size: 0.9rem;
+    color: var(--second-color);
+    background-color: var(--main-color);
+    position: relative;
+}
+
+Footer a {
+    color: var(--contraste-color);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
