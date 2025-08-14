@@ -60,3 +60,19 @@ addStars();
     });
   });
 
+document.addEventListener("DOMContentLoaded", () => {
+  const text = "Hello, World!";
+  const typedEl =  document.getElementById("typed");
+
+  let i = 0;
+
+  function digitar() {
+    if(i < text.length) {
+      typedEl.innerHTML += text.charAt(i);
+      i++;
+      setTimeout(digitar, 120);
+    }
+  }
+
+  digitar();
+})
